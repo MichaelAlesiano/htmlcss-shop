@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+
+h1{
+  text-align: center;
+  padding: 15px;
+  font-size: 50px;
+}
+
+/* body */
+
+body{
+  background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+
+/* main */
+
+.container{
+  width: 1000px;
+  height: 600px;
+  margin: 10px;
+  position: absolute;
+  left: 25%;
+  top: 8%;
+}
+
+/* sezioni */
+
+.spazio{
+  margin-bottom: 20px;
+}
+
+.box{
+  display: inline-block;
+  position: relative;
+}
+
+.box .discount{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: green;
+}
+
+.box:nth-child(even) .discount{
+  background-color: red;
+}
+
+.box .heart{
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  font-size: 22px;
+  width: 100%;
+  color: red;
+  text-align: center;
+}
+
+.box:hover .heart{
+  display: block;
+  cursor: pointer;
+}
